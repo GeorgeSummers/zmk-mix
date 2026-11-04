@@ -1,66 +1,7 @@
 layout: {zmk_keyboard: mix}
 layers:
-  Default:
-  - '`'
-  - '1'
-  - '2'
-  - '3'
-  - '4'
-  - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - '-'
-  - TAB
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - '['
-  - LSHIFT
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - ;
-  - ''''
-  - LCTRL
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ']'
-  - ESCAPE
-  - Alt+PRINTSCREEN
-  - LEFT GUI
-  - LEFT ALT
-  - SPACE
-  - layer 1
-  - layer 1
-  - ENTER
-  - RSHIFT
-  - ''
-  - {t: SPACE, h: BT}
-  - \
+  Default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', LSHIFT, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL,
+    Z, X, C, V, B, N, M, ',', ., /, ']', ESCAPE, Alt+PRINTSCREEN, LEFT GUI, LEFT ALT, SPACE, layer 1, layer 1, ENTER, RSHIFT, '', APPLICATION, \]
   layer 1:
   - ESC
   - F1
@@ -75,19 +16,19 @@ layers:
   - F10
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&mkp MCLK'
+  - '&msc SCRL_LEFT'
   - UP
-  - {t: ▽, type: trans}
+  - '&msc SCRL_RIGHT'
   - '-'
   - '='
   - '7'
   - '8'
   - '9'
-  - {t: ▽, type: trans}
+  - '0'
   - F12
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
   - LEFT
   - DOWN
   - RIGHT
@@ -108,15 +49,15 @@ layers:
   - '1'
   - '2'
   - '3'
-  - '0'
+  - Sft+7
+  - PRINTSCREEN
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
+  - {t: BT, type: held}
+  - BT
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -237,12 +178,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
 - p: [0, 11, 54, 53]

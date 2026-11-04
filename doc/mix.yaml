@@ -1,8 +1,8 @@
 layout: {zmk_keyboard: mix}
 layers:
   Default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '-', TAB, Q, W, E, R, T, Y, U, I, O, P, '[', LSHIFT, A, S, D, F, G, H, J, K, L, ;, '''', LCTRL,
-    Z, X, C, V, B, N, M, ',', ., /, ']', ESCAPE, Alt+PRINTSCREEN, LEFT GUI, LEFT ALT, SPACE, layer 1, layer 1, ENTER, RSHIFT, '', APPLICATION, \]
-  layer 1:
+    Z, X, C, V, B, N, M, ',', ., /, ']', ESCAPE, Alt+PRINTSCREEN, LEFT GUI, LEFT ALT, SPACE, NUM, BT, ENTER, RSHIFT, '', APPLICATION, \]
+  NUM:
   - ESC
   - F1
   - F2
@@ -56,27 +56,27 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: BT, type: held}
-  - BT
+  - {t: GAME, h: toggle, type: held}
+  - {t: GAME, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  layer 2:
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
+  BT:
+  - BT CLR
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - OUT TOG
+  - OUT BLE
+  - OUT USB
   - (
   - )
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - BT CLR ALL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -84,7 +84,7 @@ layers:
   - _
   - +
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '|'
@@ -95,9 +95,9 @@ layers:
   - {t: ▽, type: trans}
   - '{'
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - LEFT
+  - DOWN
+  - RIGHT
   - ':'
   - '"'
   - {t: ▽, type: trans}
@@ -118,68 +118,68 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  BT:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR ALL
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  GAME:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - BSPC
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - UP
+  - O
+  - P
+  - '['
+  - LSHFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - LEFT
+  - DOWN
+  - RIGHT
+  - ;
+  - ''''
+  - LCTRL
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - '='
+  - LALT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - SPACE
+  - {t: Default, h: toggle}
+  - {t: Default, h: toggle}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -188,3 +188,9 @@ layers:
 combos:
 - p: [0, 11, 54, 53]
   k: '&bootloader'
+- p: [11, 10]
+  k: '='
+- p: [36, 20]
+  k: Ctl+INSERT
+- p: [56, 20]
+  k: Sft+INS

@@ -38,29 +38,31 @@
         LAYER0 {
             display-name = "Default";
             bindings = <
-&kp GRAVE   &kp N1               &kp N2        &kp N3        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7     &kp N8      &kp N9   &kp N0         &kp MINUS
-&kp TAB     &kp Q                &kp W         &kp E         &kp R         &kp T   &kp Y         &kp U      &kp I       &kp O    &kp P          &kp LBKT
-&kp LSHIFT  &kp A                &kp S         &kp D         &kp F         &kp G   &kp H         &kp J      &kp K       &kp L    &kp SEMICOLON  &kp SQT
-&kp LCTRL   &kp Z                &kp X         &kp C         &kp V         &kp B   &kp N         &kp M      &kp COMMA   &kp DOT  &kp FSLH       &kp RBKT
-&kp ESCAPE  &kp LA(PRINTSCREEN)  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &mo 1   &mo 1         &kp ENTER  &kp RSHIFT  &none    &lt 3 SPACE    &kp BSLH
+&kp GRAVE   &kp N1               &kp N2        &kp N3        &kp NUMBER_4  &kp N5  &kp NUMBER_6  &kp N7     &kp N8      &kp N9   &kp N0             &kp MINUS
+&kp TAB     &kp Q                &kp W         &kp E         &kp R         &kp T   &kp Y         &kp U      &kp I       &kp O    &kp P              &kp LBKT
+&kp LSHIFT  &kp A                &kp S         &kp D         &kp F         &kp G   &kp H         &kp J      &kp K       &kp L    &kp SEMICOLON      &kp SQT
+&kp LCTRL   &kp Z                &kp X         &kp C         &kp V         &kp B   &kp N         &kp M      &kp COMMA   &kp DOT  &kp FSLH           &kp RBKT
+&kp ESCAPE  &kp LA(PRINTSCREEN)  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE     &mo 1   &mo 1         &kp ENTER  &kp RSHIFT  &none    &kp K_APPLICATION  &kp BSLH
             >;
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&encoder_sc SCRL_UP SCRL_DOWN>;
+                <&inc_dec_kp BACKSPACE DELETE>;
         };
 
         LAYER1 {
             display-name = "layer 1";
             bindings = <
-&kp ESC  &kp F1    &kp F2     &kp F3     &kp F4     &kp F5                 &kp F6                 &kp F7  &kp F8  &kp F9  &kp F10         &kp F11
-&trans   &trans    &trans     &kp UP     &trans     &kp MINUS              &kp EQUAL              &kp N7  &kp N8  &kp N9  &trans          &kp F12
-&trans   &trans    &kp LEFT   &kp DOWN   &kp RIGHT  &kp LEFT_PARENTHESIS   &kp LEFT_PARENTHESIS   &kp N4  &kp N5  &kp N6  &kp UNDERSCORE  &kp EQUAL
-&trans   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3  &kp N0          &trans
-&trans   &trans    &trans     &trans     &trans     &trans                 &trans                 &trans  &trans  &trans  &trans          &trans
+&kp ESC  &kp F1     &kp F2          &kp F3     &kp F4           &kp F5                 &kp F6                 &kp F7  &kp F8  &kp F9  &kp F10         &kp F11
+&trans   &mkp MCLK  &msc SCRL_LEFT  &kp UP     &msc SCRL_RIGHT  &kp MINUS              &kp EQUAL              &kp N7  &kp N8  &kp N9  &kp N0          &kp F12
+&trans   &kp LEFT   &kp LEFT        &kp DOWN   &kp RIGHT        &kp LEFT_PARENTHESIS   &kp LEFT_PARENTHESIS   &kp N4  &kp N5  &kp N6  &kp UNDERSCORE  &kp EQUAL
+&trans   &kp HOME   &kp PG_DN       &kp PG_UP  &kp END          &kp RIGHT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3  &kp LS(N7)      &kp PRINTSCREEN
+&trans   &trans     &trans          &trans     &trans           &mo 3                  &mo 3                  &trans  &trans  &trans  &trans          &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&encoder_sc SCRL_UP SCRL_DOWN>;
         };
 
         LAYER2 {

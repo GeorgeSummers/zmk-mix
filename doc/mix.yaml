@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: mix}
 layers:
   Default:
-  - ESCAPE
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -12,7 +12,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - BSPC
+  - '-'
   - TAB
   - Q
   - W
@@ -24,8 +24,8 @@ layers:
   - I
   - O
   - P
-  - \
-  - CAPS
+  - '['
+  - LSHIFT
   - A
   - S
   - D
@@ -37,7 +37,7 @@ layers:
   - L
   - ;
   - ''''
-  - LSHFT
+  - LCTRL
   - Z
   - X
   - C
@@ -48,19 +48,19 @@ layers:
   - ','
   - .
   - /
-  - RSHFT
-  - LCTRL
-  - MUTE
-  - LALT
-  - LGUI
-  - layer 1
+  - ']'
+  - ESCAPE
+  - Alt+PRINTSCREEN
+  - LEFT GUI
+  - LEFT ALT
   - SPACE
+  - layer 1
+  - layer 1
   - ENTER
-  - layer 2
-  - RGUI
-  - RALT
+  - RSHIFT
+  - ''
   - {t: SPACE, h: BT}
-  - RCTRL
+  - \
   layer 1:
   - F12
   - F1
@@ -114,9 +114,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: layer 2, type: held}
+  - layer 2
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -176,9 +176,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
